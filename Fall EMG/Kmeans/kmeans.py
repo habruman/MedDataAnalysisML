@@ -69,7 +69,7 @@ def kmeans():
                 X1 = data1  # Die Features ohne die Spalte 'class'
                 X2 = data2
 
-                """
+                
                 # Kreuzvalidierung vorbereiten
                 kf = KFold(n_splits=7, shuffle=True, random_state=0)
                 silhouette_scores_for_k = {k: [] for k in [4, 5, 6, 7, 8, 9, 10]}
@@ -112,7 +112,7 @@ def kmeans():
                 plt.xticks(k_values)  # Stelle sicher, dass alle k-Werte als Ticks angezeigt werden
                 plt.show()
 
-                """
+                
 
 
                 # Erstelle ein NumPy-Array aus den Daten, besser für die Methoden fit, predict und pca
