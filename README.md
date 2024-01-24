@@ -34,58 +34,42 @@ Ziel ist: Anwendung von ML auf drei Arten von nicht-invasiven medizinischen Date
 - Python-Skript `convert.py` zur Konvertierung der Daten ausführen, dann Ausführungsskript vom gewünschten Algorithmus starten.
 - Es wurden relative Pfade verwendet, daher sind alle Skripte direkt startklar.
 
+## Struktur vom Code im zweiten Fall: Fall Depression
 
-** Struktur vom Code im zweiten Fall:
-Fall Depression
-│
-├── Data                              -> enthält die Daten bereits im CSV-Format
-│   └── activity_data.csv             -> die Daten in CSV-Format
-│
-├── DeepAR                             
-│   └── dataset.py                    -> Python-Skript zum Laden und Vorbereiten der CSV-Dateien 
-│   └── deepar.py                     -> spezifische Implementierung von DeepAR
-│   └── run_deepar.py                 -> Ausführungsskript von DeepAR
-│
-├── N-BEATS                       
-│   └── dataset.py                    -> Python-Skript zum Laden und Vorbereiten der CSV-Dateien 
-│   └── wrapper.py                    -> spezifische Implementierung von N-BEATS
-│   └── run_nbeats.py                 -> Ausführungsskript von N-BEATS
-│
-└── Transformer                      
-   └── dataset.py                     -> Python-Skript zum Laden und Vorbereiten der CSV-Dateien
-   └── wrapper.py                     -> spezifische Implementierung von Transformer
-   └── run_transformer.py             -> Ausführungsskript von Transformer
+- **Data**
+  - `activity_data.csv`: Die Daten im CSV-Format
 
-- Ausführung: Ausführungsskript vom gewünschten Algorithmus starten.
-- Auch hier wurden realtive Pfade verwendet, daher sind alle Skripte direkt startklar.
+- **DeepAR**
+  - `dataset.py`: Python-Skript zum Laden und Vorbereiten der CSV-Dateien
+  - `deepar.py`: Spezifische Implementierung von DeepAR
+  - `run_deepar.py`: Ausführungsskript von DeepAR
 
+- **N-BEATS**
+  - `dataset.py`: Python-Skript zum Laden und Vorbereiten der CSV-Dateien
+  - `wrapper.py`: Spezifische Implementierung von N-BEATS
+  - `run_nbeats.py`: Ausführungsskript von N-BEATS
 
-** Struktur vom Code im dritten Fall:
-Fall EMG
-│
-├── Konvertierung Rohdaten            -> enthält die EMG-Rohdaten und Python-Skript zur Konvertierung  -> Daten werden konvertiert und im CSV-Format hier gepeichert
-│   └── convert.py                    -> Python-Skript zur Konvertierung der Rohdaten in CSV-Dateien
-│
-└── Kmeans                      
-   └── kmeans.py                      -> Python-Skript zum Laden und Vorbereiten der CSV-Dateien mit spezifischer Implementierung von dem Algorithmus K-means
+- **Transformer**
+  - `dataset.py`: Python-Skript zum Laden und Vorbereiten der CSV-Dateien
+  - `wrapper.py`: Spezifische Implementierung von Transformer
+  - `run_transformer.py`: Ausführungsskript von Transformer
 
-- Ausführung: Python-Skript convert.py zur Konvertierung der Daten ausführen, dann Python-Skript kmeans.py starten.
-- Auch hier wurden realtive Pfade verwendet, daher sind alle Skripte direkt startklar.
+### Ausführung
+- Direkter Start des Ausführungsskripts vom gewünschten Algorithmus.
+- Relative Pfade wurden verwendet, daher sind alle Skripte direkt startklar.
 
 
+## Struktur vom Code im dritten Fall: Fall EMG
 
+- **Konvertierung Rohdaten**
+  - `convert.py`: Python-Skript zur Konvertierung der Rohdaten in CSV-Dateien
+  - `roh_data`: EMG-Rohdaten in verschiedenen Formaten
 
+- **Kmeans**
+  - `kmeans.py`: Python-Skript zum Laden und Vorbereiten der CSV-Dateien mit spezifischer Implementierung von K-means
 
+### Ausführung
+- Python-Skript `convert.py` zur Konvertierung der Daten ausführen, dann `kmeans.py` starten.
+- Auch hier wurden relative Pfade verwendet, daher sind alle Skripte direkt startklar.
 
-
-
-
-
-
-
-
-
-
-
-
-
+---
