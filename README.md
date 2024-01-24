@@ -10,7 +10,7 @@ Ziel ist: Anwendung von ML auf drei Arten von nicht-invasiven medizinischen Date
   - `convert.py`: Python-Skript zur Konvertierung der Rohdaten in CSV-Dateien
   - `roh_data`: EKG-Rohdaten in verschiedenen Formaten (.hea, .atr, .xws, .dat)
 - **Data**
-  - `ekg_data.csv`: Die konvertierten Daten im CSV-Format
+  - `ekg_data.csv`: Die konvertierten Daten im CSV-Format, „ekg_data“ steht hier für die verschiedenen CSV-Dateien 
 
 - **SVM**
   - `dataset.py`: Python-Skript zum Laden und Vorbereiten der CSV-Dateien (Standardisierung, Aufteilung)
@@ -37,7 +37,7 @@ Ziel ist: Anwendung von ML auf drei Arten von nicht-invasiven medizinischen Date
 ## Struktur vom Code im zweiten Fall: Fall Depression
 
 - **Data**
-  - `activity_data.csv`: Die Daten im CSV-Format
+  - `activity_data.csv`: Die Daten im CSV-Format, „activity_data“ steht hier für die verschiedenen CSV-Dateien 
 
 - **DeepAR**
   - `dataset.py`: Python-Skript zum Laden und Vorbereiten der CSV-Dateien
@@ -63,7 +63,7 @@ Ziel ist: Anwendung von ML auf drei Arten von nicht-invasiven medizinischen Date
 
 - **Konvertierung Rohdaten**
   - `convert.py`: Python-Skript zur Konvertierung der Rohdaten in CSV-Dateien
-  - `roh_data`: EMG-Rohdaten in verschiedenen Formaten
+  - `roh_data`: EMG-Rohdaten im Textformat
 
 - **Kmeans**
   - `kmeans.py`: Python-Skript zum Laden und Vorbereiten der CSV-Dateien mit spezifischer Implementierung von K-means
