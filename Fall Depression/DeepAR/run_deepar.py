@@ -9,7 +9,7 @@ from deepar import DeepARWrapper
 # lag ist die Zeitschritte in Vergangenheit 
 hyperparameters = {
     'deepar': {
-        'n_epochs': 1,  
+        'n_epochs': 30,  
         'model_init_seed': 198471,
         'lag': 5,
     }
