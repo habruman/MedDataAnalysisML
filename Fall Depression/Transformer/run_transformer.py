@@ -8,7 +8,7 @@ from gluonts.mx import TransformerEstimator
 
 hyperparameters = {
     'transformer': {
-        'n_epochs': 1,
+        'n_epochs': 30,
         'model_init_seed': 198471,
         'lag': 5,
     }
